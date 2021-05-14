@@ -21,6 +21,7 @@ let vertices = [
 describe('#depthFirstSearch', function() {
 	it('prints out the nodes in order', function(){
 		let rootNode = vertices[0]
-		expect(depthFirstSearch(rootNode, vertices, edges).map(function(vertex){return vertex.name;})).toEqual(['34th&6th', '23rd&6th', '28th&Bwy', '23rd&Bwy', '14th&Lex', '23rd&Lex', '14th&6th'])
+		// expect(depthFirstSearch(rootNode, vertices, edges).map(function(vertex){return vertex.name;})).toEqual(['34th&6th', '23rd&6th', '28th&Bwy', '23rd&Bwy', '14th&Lex', '23rd&Lex', '14th&6th'])
+		expect(depthFirstSearch(rootNode, vertices, edges).map(function(vertex){return vertex.name;})).toEqual(['34th&6th', '23rd&6th', '14th&6th', '28th&Bwy', '23rd&Bwy', '14th&Lex', '23rd&Lex'])
 	})
 });
